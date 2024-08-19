@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+margin: 0;
+}
+
+/*CORES*/
+:root{
+--black: #000000;
+--white: #FFFFFF;
+}
+
+/*CABEÇALHO*/
+.cabecalho-div-login {
+display: flex;
+justify-content:space-between;
+font-family: "Kanit", cursive;
+margin: 30px;
+}
+
+.home {
+text-align: center;
+font-family: "Roboto", cursive;
+margin: 10px;
+}
+
+.botao-login-cabecalho {
+width: 200px;
+height: 40px;
+background-color: var(--black);
+color: var(--white);
+border-radius: 10px;
+}
+
+
+/*BODY*/
+
+article{
+margin: 50px;
+}
+
+.everest-fuji-alpes-canyon img {
+
+}
+.everest-fuji-alpes-canyon {
+display: grid;
+grid-template-columns: repeat(auto-fill, 320px);
+gap: 30px;
+}
+
+.everest {
+width: 300px;
+
+}
+
+.fuji {
+width: 330px;
+height: 550px;
+margin-left: 30px;
+}
+
+.alpes {
+width: 400px;
+
+}
+
+.canyon {
+width: 400px;
+}
