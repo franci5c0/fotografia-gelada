@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotografia gelada</title>
     <link href="style.css" rel="stylesheet">
 </head>
+<style>
+
+/*REDIMENSIONAMENTO*/
+.item2 img {
+width: 600px;
+}
+
+.item3 img {
+width: 500px;
+height: 450px;
+}
+
+.item4 img {
+width: 500px;
+height: 450px;  
+}
+
+
+
+/*POSICIONAMENTO*/
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+
+
+
+
+
+</style>
 <body class="corpo">
 
     <header class="cabecalho">
@@ -22,24 +63,21 @@
 </div>
 <hr>
 
-<main class="main">
+<main>
 
+   
+<div class="grid-container">
 
+    <div class="grid-item item1"><img src="./imagens/Everest.jpg"></div>
+    <div class="grid-item item2"><img src="./imagens/MonteFuji.jpg"></div>
+    <div class="grid-item item3"><img src="./imagens/AlpesSuiços.jpg"></div>  
+    <div class="grid-item item4"><img src="./imagens/GrandCanyon.jpg"></div>
+    <div class="grid-item item5"><img src="./imagens/MonteBranco.jpg"></div>
+    <div class="grid-item item6"><img src="./imagens/MonteElbrus.jpg"></div>  
+    <div class="grid-item item7"><img src="./imagens/PicoPikes.jpg"></div>
+    <div class="grid-item item8"><img src="./imagens/Huandoy.jpg"></div>
 
-<article>
-<div class="everest-fuji-alpes-canyon"><img class="everest" src="./imagens/Everest.jpg" alt="everest">
-    <img class="fuji" src="./imagens/MonteFuji.jpg" alt="fuji">
-    <img class="alpes" src="./imagens/AlpesSuiços.jpg" alt="alpes">
-    <img class="canyon" src="./imagens/GrandCanyon.jpg" alt="canyon">
-</div>
-</article>
-    
-
-    <article>
-
-    
-    </article>
-
+  </div>
 
 
 
