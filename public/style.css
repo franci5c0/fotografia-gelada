@@ -28,4 +28,78 @@ border-radius: 10px;
 
 
 /*BODY*/
+.grid-container {
+    display: grid;
+    grid-template-rows: 715px 500px 900px;
+    grid-template-columns: 620px 620px 650px;
+    grid-gap: 5px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
 
+  /*REDIMENSIONAMENTO*/
+.fuji img {
+ width: 605px;
+ height: 1200px;
+}
+    
+.doy img {
+width: 500px;
+height: 450px;
+}
+.pike img{
+width: 500px;
+height: 450px;
+}
+
+.monte-branco img{
+width: 605px;
+height: 1200px;
+}
+
+.everest img{
+width: 1230px;
+height: 700px;
+}
+
+.elbrus img{
+width: 1230px;
+height: 700px;
+}
+
+.alpescanyon img {
+    width: 605px;
+    height: 481px;
+    }
+
+    /*DIVS*/
+.alpescanyon {
+grid-row: 2;
+display: flex;
+gap: 19px;
+position: static;
+}
+
+.everest{ 
+    grid-column: span 2;
+    position: static;
+    height: 0px
+}
+
+.fuji {
+position: static;
+}
+
+.monte-branco {
+grid-column: 1;
+}
+
+.doy {
+grid-row: 4;
+grid-column: 3;
+}
+
+.pike {
+grid-row: 4;
+grid-column: 2;
+}
