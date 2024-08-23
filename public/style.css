@@ -30,76 +30,87 @@ border-radius: 10px;
 /*BODY*/
 .grid-container {
     display: grid;
-    grid-template-rows: 715px 500px 900px;
-    grid-template-columns: 620px 620px 650px;
-    grid-gap: 5px;
-    background-color: #2196F3;
-    padding: 10px;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat( 4);
+   gap: 20px 5px;
+   
   }
 
-  /*REDIMENSIONAMENTO*/
-.fuji img {
- width: 605px;
- height: 1200px;
-}
-    
-.doy img {
-width: 500px;
-height: 450px;
-}
-.pike img{
-width: 500px;
-height: 450px;
-}
+  .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
-.monte-branco img{
-width: 605px;
-height: 1200px;
-}
+  }
 
-.everest img{
-width: 1230px;
-height: 700px;
-}
-
-.elbrus img{
-width: 1230px;
-height: 700px;
-}
-
-.alpescanyon img {
-    width: 605px;
-    height: 481px;
-    }
-
-    /*DIVS*/
-.alpescanyon {
-grid-row: 2;
-display: flex;
-gap: 19px;
-position: static;
-}
-
-.everest{ 
-    grid-column: span 2;
-    position: static;
-    height: 0px
+.everest {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .fuji {
-position: static;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
+  
+.alpes {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.canyon {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
 
 .monte-branco {
-grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 
-.doy {
-grid-row: 4;
-grid-column: 3;
+.elbrus {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .pike {
-grid-row: 4;
-grid-column: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.doy {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+/*ÍCONES*/
+.icone-page{
+position: absolute;
+
+
+
+}
+
+.icone-page img{
+width: 50px;
+height: 50px;
 }
