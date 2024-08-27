@@ -18,6 +18,7 @@ font-family: "", cursive;
 margin: 10px;
 }
 
+/*
 .botao-login-cabecalho {
 width: 200px;
 height: 40px;
@@ -28,6 +29,11 @@ border-radius: 10px;
 
 
 /*BODY*/
+
+main {
+margin: 10px;
+}
+
 .grid-container {
     display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -107,6 +113,10 @@ background-color: gray;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 30px;
+bottom: -100px;
+background-color: rgba(10,23,25,0.6);
+padding: 10px;
+padding-left: 5px;
 }
 
 .icone-page img{
@@ -115,5 +125,62 @@ height: 50px;
 }
 
 .botao-like {
+position: relative;
+background:none;
+border:none
+}
 
+.cont {
+font-size: 23px;
+}
+
+/*JAVASCRIPT*/
+
+
+/*TESTE POP UP*/
+
+.botao-login-cabecalho {
+    width: 200px;
+    height: 40px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    
+.modal {
+
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fica no lugar */
+    z-index: 1; /* permanece em cima */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilitar rolagem se necessária */
+    background-color: rgb(0,0,0); /* Cor de fallback */
+    background-color: rgba(0,0,0,0.4); /* Preto com opacidade */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
